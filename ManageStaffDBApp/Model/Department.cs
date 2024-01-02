@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ManageStaffDBApp.Model
 {
-    class Department
+    public class Department
     {
         public int Id { get; set; }
         public string Name { get; set; }
