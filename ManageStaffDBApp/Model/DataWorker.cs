@@ -53,7 +53,7 @@ namespace ManageStaffDBApp.Model
             }
         }
         //создать позицию
-        static string CreatePosition(string name, decimal salary, int maxNumber, Department department)
+        public static string CreatePosition(string name, decimal salary, int maxNumber, Department department)
         {
             string result = "Уже существует";
             using (ApplicationContext db = new ApplicationContext())
@@ -76,7 +76,7 @@ namespace ManageStaffDBApp.Model
             }
         }
         //создать сотрудника
-        static string CreateUser(string name, string surName, string phone, Position position)
+        public static string CreateUser(string name, string surName, string phone, Position position)
         {
             string result = "Уже существует";
             using (ApplicationContext db = new ApplicationContext())
@@ -123,7 +123,6 @@ namespace ManageStaffDBApp.Model
             }
             return result;
         }
-
         //удалить сотрудника
         public static string DeleteUser(User user)
         {
